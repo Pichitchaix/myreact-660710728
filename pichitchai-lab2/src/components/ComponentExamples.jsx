@@ -35,7 +35,7 @@ function ComponentExamples() {
 
            <section style={{
     marginBottom: '20px',
-    border: '4px solid', // ต้องกำหนด width และ style
+    border: '4px solid', 
     
     borderImage: 'linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet) 1',
     backgroundColor: '#ffffffff',
