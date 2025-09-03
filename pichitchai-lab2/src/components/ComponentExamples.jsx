@@ -5,6 +5,7 @@ import Clock from './Clock';
 import UserCard from './UserCard';
 import TodoList from './TodoList';
 
+
 function ComponentExamples() {
     return (
         <div style={{
@@ -13,66 +14,40 @@ function ComponentExamples() {
             padding: '20px',
             fontFamily: 'Arial, sans-serif'
         }}>
-            <h1 style={{
+
+            
+
+            <section style={{
+                marginBottom: '40px',
+                padding: '10px',
+                border: '1px solid #22cceeff',
+                borderRadius: '50px',
+                backgroundColor: '#fafafa'
+            }}>
+                <h1 style={{
                 textAlign: 'center',
-                color: '#667eea',
-                marginBottom: '40px'
+                color: '#f5087eff',
+                marginBottom: '20px'
             }}>
-                ตัวอย่าง React Components
+                Welcome to my ToDoList
             </h1>
-            
-            <section style={{
-                marginBottom: '40px',
-                padding: '20px',
-                border: '1px solid #eee',
-                borderRadius: '8px',
-                backgroundColor: '#fafafa'
-            }}>
-                <h2 style={{ color: '#333', marginBottom: '20px' }}>
-                    Simple Components
-                </h2>
-                <Welcome />
-                <Greeting />
             </section>
-            
-            <section style={{
-                marginBottom: '40px',
-                padding: '20px',
-                border: '1px solid #eee',
-                borderRadius: '8px',
-                backgroundColor: '#fafafa'
-            }}>
-                <h2 style={{ color: '#333', marginBottom: '20px' }}>
-                    Component with Logic
-                </h2>
-                <Clock />
-            </section>
-            
-            <section style={{
-                marginBottom: '40px',
-                padding: '20px',
-                border: '1px solid #eee',
-                borderRadius: '8px',
-                backgroundColor: '#fafafa'
-            }}>
-                <h2 style={{ color: '#333', marginBottom: '20px' }}>
-                    Component Composition
-                </h2>
-                <UserCard />
-            </section>
-            
-            <section style={{
-                marginBottom: '40px',
-                padding: '20px',
-                border: '1px solid #eee',
-                borderRadius: '8px',
-                backgroundColor: '#fafafa'
-            }}>
-                <h2 style={{ color: '#333', marginBottom: '20px' }}>
-                    Complex Component
-                </h2>
-                <TodoList />
-            </section>
+
+           <section style={{
+    marginBottom: '20px',
+    border: '4px solid', // ต้องกำหนด width และ style
+    
+    borderImage: 'linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet) 1',
+    backgroundColor: '#ffffffff',
+    padding: '20px'
+}}>
+    <Welcome />
+    <Greeting />
+    <Clock />
+    <UserCard />
+    <TodoList />
+</section>
+
         </div>
     );
 }

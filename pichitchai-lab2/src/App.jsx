@@ -6,7 +6,6 @@ function App() {
     return (
         <div className="App">
             <ComponentExamples />
-            <a href="https://react.dev">learn react</a> 
         </div>
     );
 }

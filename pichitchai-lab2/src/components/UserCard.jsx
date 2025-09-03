@@ -1,28 +1,35 @@
 import React from 'react';
+import profile from './image_user/knight.avif'
 
 // Component ย่อยๆ
 const Avatar = () => (
     <img 
-        src="https://via.placeholder.com/50" 
+        src={profile}
         alt="User Avatar"
         style={{
             borderRadius: '50%',
-            width: '50px',
-            height: '50px',
+            width: '150px',
+            height: '140px',
             border: '2px solid #667eea'
         }}
     />
 );
 
 const UserName = () => (
-    <h3 style={{ color: '#667eea', margin: '10px 0' }}>
-        สมชาย ใจดี
+    <h3 style={{ color: '#0c237cff', margin: '10px 0' }}>
+        นาย พิชิตชัย แจ่มจำรัส
+    </h3>
+);
+
+const UserID = () => (
+    <h3 style={{ color: '#1f3dc2ff', margin: '10px 0' }}>
+        660710728
     </h3>
 );
 
 const UserBio = () => (
-    <p style={{ color: '#666', fontSize: '14px' }}>
-        นักพัฒนา React มือใหม่ที่กำลังเรียนรู้
+    <p style={{ color: '#666', fontSize: '14px' }} className='ibm-regular'>
+        ชอบการเงิน อยากรวย เริ่มไม่ค่อยชอบ IT แล้ว T_T
     </p>
 );
 
@@ -34,13 +41,14 @@ const UserCard = () => {
             padding: '20px',
             borderRadius: '12px',
             textAlign: 'center',
-            backgroundColor: '#f9f9f9',
+            backgroundColor: '#ffffffff',
             maxWidth: '300px',
             margin: '20px auto'
         }}>
             <Avatar />
             <UserName />
             <UserBio />
+            <UserID />
         </div>
     );
 };
