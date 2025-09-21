@@ -113,7 +113,7 @@ export const useBookFilters = (initialBooks = []) => {
   const [sortBy, setSortBy] = useState('title');
 
   useEffect(() => {
-    applyFiltersAndSort();
+     applyFiltersAndSort();
   }, [filters, sortBy, initialBooks]);
 
   const applyFiltersAndSort = () => {
