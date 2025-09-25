@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './style/BookCard.css'; // ✨ Import from style folder
+import './styles/BookCard.css'; // ✨ Import from style folder
 import BookImage from './BookImage'; // ✨ Use BookImage for lazy loading
 
 const BookCard = ({ book, viewMode = 'grid' }) => {

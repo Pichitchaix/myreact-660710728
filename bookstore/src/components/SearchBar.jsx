@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './style/SearchBar.css';
+import './styles/SearchBar.css';
 import { searchBooks } from '../data/booksData';
 
 const SearchBar = ({ onSearch, placeholder = "Search for books...", className = "" }) => {

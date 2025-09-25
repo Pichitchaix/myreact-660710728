@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './style/BookImage.css';
+import './styles/BookImage.css';
 
 /**
  * BookImage Component - สำหรับ lazy loading รูปภาพ
